@@ -817,7 +817,8 @@ Nmap done: 1 IP address (1 host up) scanned in 1071.07 seconds
 
 `nmap` сканирует  порт  2049 по протоколу UDP  vm `Metasploitable 2` 
 1) vm `kali` отправляет UDP-пакет. 
-2) vm `Metasploitable 2` отправляет UDP-пакет на vm `kali` `nmap` на основании этого ответа делает вывод о том, что порт 2049 для соединения по протоколу UDP открыт.
+2) vm `Metasploitable 2` отправляет UDP-пакет на vm `kali`. `nmap` на основании этого ответа делает вывод о том, что порт 2049 для соединения по протоколу UDP открыт.
+
 vm `Metasploitable 2`  не отправляет обратный echo-запрос ICMP с порта 2049. 
 
 
