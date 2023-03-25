@@ -28,9 +28,6 @@
 
 ### *<a name = "1"> Ответ к Заданию 1 </a>*
 
-Посмотрела видео
-- https://www.youtube.com/watch?v=pre9yWxjjrk&t=20s
-
 Установила две виртуальные машины:
 - kali linux
 - metasploitable 2
@@ -567,8 +564,8 @@ smb: \rootfs\etc\> exit
 Использованные источники:
 
 - Презентация "Уязвимости и атаки на информационные системы", Ирина Подборская
-
 - https://docs.rapid7.com/metasploit/metasploitable-2-exploitability-guide/ 
+- https://www.youtube.com/watch?v=pre9yWxjjrk&t=20s
 
 ---
 
